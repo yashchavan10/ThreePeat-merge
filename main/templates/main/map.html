@@ -14,10 +14,12 @@
 
 <ul class="sidenav">
   <div class="brand-logo" >
-		<img class="logo" src="{% static 'branding/yaan.png' %}" />
-		
+		<a class="navbar-brand" href="{% url 'main:home' %}">
+      <!-- <img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" alt="..." height="36"> -->
+      <img class="logo" src="{% static 'branding/logo new.png' %}" />
+    </a>
 	</div>
-  <li><a href="{% url 'main:route' %}">Routing</a></li>
+  <li><a href="{% url 'main:route' %}">Search</a></li>
   <li><a class="active" href="#map">Map</a></li>
 </ul>
 

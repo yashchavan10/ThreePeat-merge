@@ -14,7 +14,8 @@ function initAutocomplete() {
   autocomplete_a = new google.maps.places.Autocomplete(
    document.getElementById('id-google-address-a'),
    {
-        types: ['address' | 'food' | 'health'|'neighbourhood'|'gas_station'],
+       types: ['address' | 'food' | 'health'|'neighbourhood'|'gas_station'],
+    //    componentRestrictions: {'country': ['india']},
    })
   
   autocomplete_a.addListener('place_changed', function(){
@@ -25,7 +26,8 @@ function initAutocomplete() {
   autocomplete_b = new google.maps.places.Autocomplete(
    document.getElementById('id-google-address-b'),
    {
-      types: ['address' | 'food' | 'health'|'neighbourhood'|'gas_station'],
+      // types: ['address' | 'food' | 'health'|'neighbourhood'|'gas_station'],
+      // componentRestrictions: {'country': ['uk']},
    })
   
   autocomplete_b.addListener('place_changed', function(){

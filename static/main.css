@@ -9,7 +9,48 @@ body {
 body, html, .map-container {
   height: 100%;
 }
+/* .container{
+  
+  position: relative;
+  
+  width: 170px;
+  height: 15px;
+  background-size: 300px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 
+} */
+
+
+
+.container-hero{
+background-image: url("branding/hero-bg.jpg");
+min-height: 580px;
+background-position: center;
+background-repeat: no-repeat;
+background-position-y: center;
+/* opacity: 0.8; */
+background-size: cover;
+
+/* Needed to position the navbar */
+position: relative;
+}
+.centered {
+position: absolute;
+justify-content: center;
+top: 50%;
+left: 50%;
+color: white;
+transform: translate(-50%, -50%);
+}
+
+
+
+.container-fluid{
+position: absolute;
+margin: 20px;
+/* width: auto; */
+}
 #map-route {
   height: 75%;
   }
@@ -258,7 +299,7 @@ button[type=submit]:hover {
   background-color: #2596be;
 }
 
-.container {
+.container-route {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;

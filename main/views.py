@@ -4,7 +4,16 @@ from django.conf import settings
 from .mixins import Directions
 '''
 Basic view for routing 
+
+
 '''
+
+def home(request):
+	return render(request, 'main/home.html')
+
+def contact(request):
+	return render(request, 'main/contact.html')
+
 def route(request):
 
 	context = {"google_api_key": settings.GOOGLE_API_KEY}
@@ -38,6 +47,4 @@ def map(request):
 	"directions": directions,
 
 	}
-
-
 	return render(request, 'main/map.html', context)
